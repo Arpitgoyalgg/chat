@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <Chat></Chat>
+    <Auth v-if="auth===true" @getUsername="saveUsername($event)"></Auth>
+    <Chat v-else></Chat>
   </div>
 </template>
 
 <script>
 
 import Chat from "@/components/Chat";
+import Auth from "@/components/Auth";
 export default {
   name: 'App',
   components: {
+    Auth,
     Chat
+  },
+  data: function () {
+    return {
+      auth: true
+    }
+  },
+  methods: {
+    saveUsername(username) {
+      console.log(username)
+    }
   }
 }
 </script>
