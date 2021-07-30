@@ -13,14 +13,7 @@
       <div class="message parker">Field trip! 🤣</div>
       <div class="message parker">Uh, what is this guy's problem, Mr. Stark? 🤔</div>
       <div class="message stark">Uh, he's from space, he came here to steal a necklace from a wizard.</div>
-      <div class="message stark">
-        <div class="typing typing-1">
-        </div>
-        <div class="typing typing-2">
-        </div>
-        <div class="typing typing-3">
-        </div>
-      </div>
+    <Typing></Typing>
     </div>
     <div class="input">
       <i class="fas fa-camera">
@@ -32,8 +25,10 @@
 </template>
 
 <script>
+import Typing from "@/components/Typing";
 export default {
-  name: "ChatBox"
+  name: "ChatBox",
+  components: {Typing}
 }
 </script>
 
