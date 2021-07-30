@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Auth v-if="auth===true" @getUsername="saveUsername($event)"></Auth>
+    <Auth v-if="!username" @getUsername="saveUsername($event)"></Auth>
     <Chat v-else></Chat>
   </div>
 </template>
@@ -17,12 +17,13 @@ export default {
   },
   data: function () {
     return {
-      auth: true
+      username: ''
     }
   },
   methods: {
     saveUsername(username) {
       console.log(username)
+      this.username = username
     }
   }
 }
