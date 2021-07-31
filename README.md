@@ -1,7 +1,7 @@
 # chat-app
 
 ## About
-This project is just the frontend of a chat web application. I plan to make this a fullstack working application in the future.
+This project is just the frontend of a chat web application. I plan to make this a fullstack working application in the future. Check it out [here](https://vue-chat-frontend.netlify.app/).
 
 ## Credits
 The style and markup is taken from [here](https://codepen.io/mubangadv/pen/rXrOQa).
